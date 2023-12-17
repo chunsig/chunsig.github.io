@@ -18,16 +18,14 @@ function calculate() {
     }
 
     var multipliedResult = baseValue * amount;
-    var resultString = '곱하기 결과: ' + formatCurrency(multipliedResult);
-
     var dividedResult = multipliedResult / 2;
-    resultString += ', 나누기 결과: ' + formatCurrency(dividedResult);
 
-    document.getElementById('result').innerText = '결과: ' + resultString;
+    document.getElementById('multipliedResult').innerText = formatCurrency(multipliedResult);
+    document.getElementById('dividedResult').innerText = formatCurrency(dividedResult);
 }
 
-function copyToClipboard() {
-    var resultText = document.getElementById('result').innerText;
+function copyToClipboard(elementId) {
+    var resultText = document.getElementById(elementId).innerText;
     var textarea = document.createElement('textarea');
     textarea.value = resultText;
     document.body.appendChild(textarea);
