@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>복권 및 입장권 계산기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <label for="amount">금액:</label>
+        <input type="number" id="amount" placeholder="금액을 입력하세요">
+
+        <label for="ticketType">항목 선택:</label>
+        <select id="ticketType">
+            <option value="lottery">복권</option>
+            <option value="ticket">입장권</option>
+        </select>
+
+        <button onclick="calculate()">계산하기</button>
+        <div id="result">결과: </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
