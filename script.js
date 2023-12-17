@@ -31,6 +31,14 @@ function copyToClipboard(elementId) {
     document.body.appendChild(textarea);
     textarea.select();
     
+function copyToClipboard(elementId) {
+    var resultText = document.getElementById(elementId).innerText;
+    var cleanedResultText = resultText.replace('₩', '').trim(); // '₩' 기호를 제거합니다.
+    var textarea = document.createElement('textarea');
+    textarea.value = cleanedResultText;
+    document.body.appendChild(textarea);
+    textarea.select();
+
     try {
         var successful = document.execCommand('copy');
         var msg = successful ? '성공적으로 복사되었습니다.' : '복사에 실패하였습니다.';
@@ -41,3 +49,4 @@ function copyToClipboard(elementId) {
 
     document.body.removeChild(textarea);
 }
+
