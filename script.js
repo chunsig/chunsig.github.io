@@ -1,3 +1,6 @@
+function formatCurrency(amount) {
+    return new Intl.NumberFormat('ko-KR', { style: 'currency', currency: 'KRW' }).format(amount);
+}
 
 function calculate() {
     var amount = parseFloat(document.getElementById('amount').value);
