@@ -24,8 +24,8 @@ label, input, select, button {
 /* 아이콘 스타일링 */
 button {
     background: url('계산기icon.jpg') no-repeat center center;
-    background-size: 3000px; /* 아이콘의 크기에 맞게 조절하세요 */
-    padding-left: 3000px; /* 아이콘의 크기에 맞게 조절하세요 */
+    background-size: 20px; /* 아이콘의 크기에 맞게 조절하세요 */
+    padding-left: 30px; /* 아이콘의 크기에 맞게 조절하세요 */
 }
 
 /* 아이콘이 눌렸을 때의 스타일링 */
