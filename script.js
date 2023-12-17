@@ -25,4 +25,3 @@ function calculate() {
 
     document.getElementById('result').innerText = '결과: ' + resultString;
 }
-
