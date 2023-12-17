@@ -18,7 +18,7 @@ function calculate() {
     }
 
     var multipliedResult = baseValue * amount;
-    var resultString = '받을 돈: ' + formatCurrency(multipliedResult);
+    var resultString = '받아하는 돈: ' + formatCurrency(multipliedResult);
 
     var dividedResult = multipliedResult / 2;
     resultString += ', 공동계좌에 넣을 돈: ' + formatCurrency(dividedResult);
