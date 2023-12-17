@@ -20,3 +20,15 @@ label, input, select, button {
 #result {
     margin-top: 10px;
 }
+
+/* 아이콘 스타일링 */
+button {
+    background: url('faviconn.ico') no-repeat center center;
+    background-size: 32px;
+    padding-left: 32px;
+}
+
+/* 아이콘이 눌렸을 때의 스타일링 */
+button:active {
+    background-color: #ddd;
+}
