@@ -30,7 +30,14 @@ function copyToClipboard(elementId) {
     textarea.value = resultText;
     document.body.appendChild(textarea);
     textarea.select();
-    document.execCommand('copy');
+    
+    try {
+        var successful = document.execCommand('copy');
+        var msg = successful ? '성공적으로 복사되었습니다.' : '복사에 실패하였습니다.';
+        alert(msg);
+    } catch (err) {
+        alert('이 브라우저는 클립보드 작업을 지원하지 않습니다.');
+    }
+
     document.body.removeChild(textarea);
-    alert('결과가 클립보드에 복사되었습니다.');
 }
