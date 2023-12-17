@@ -18,10 +18,10 @@ function calculate() {
     }
 
     var multipliedResult = baseValue * amount;
-    var resultString = '곱하기 결과: ' + formatCurrency(multipliedResult);
+    var resultString = '받아야할 돈: ' + formatCurrency(multipliedResult);
 
     var dividedResult = multipliedResult / 2;
-    resultString += ', 나누기 결과: ' + formatCurrency(dividedResult);
+    resultString += ', 공계에 넣을 돈: ' + formatCurrency(dividedResult);
 
     document.getElementById('result').innerText = '결과: ' + resultString;
 }
