@@ -18,10 +18,21 @@ function calculate() {
     }
 
     var multipliedResult = baseValue * amount;
-    var resultString = '받아야할 돈: ' + formatCurrency(multipliedResult);
+    var resultString = '곱하기 결과: ' + formatCurrency(multipliedResult);
 
     var dividedResult = multipliedResult / 2;
-    resultString += ', 공계에 넣을 돈: ' + formatCurrency(dividedResult);
+    resultString += ', 나누기 결과: ' + formatCurrency(dividedResult);
 
     document.getElementById('result').innerText = '결과: ' + resultString;
+}
+
+function copyToClipboard() {
+    var resultText = document.getElementById('result').innerText;
+    var textarea = document.createElement('textarea');
+    textarea.value = resultText;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+    alert('결과가 클립보드에 복사되었습니다.');
 }
