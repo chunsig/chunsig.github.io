@@ -18,8 +18,9 @@
         </select>
 
         <button onclick="calculate()">계산하기</button>
-        <button onclick="copyToClipboard()">결과 복사하기</button>
-        <div id="result">결과: </div>
+        <button onclick="copyToClipboard('multipliedResult')">받을돈 복사</button>
+        <button onclick="copyToClipboard('dividedResult')">공동계좌 복사</button>
+        <div id="result">곱하기 결과: <span id="multipliedResult"></span>, 나누기 결과: <span id="dividedResult"></span></div>
     </div>
 
     <script src="script.js"></script>
