@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="images/hb.jpg">
     <title>복권 및 입장권 계산기</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 파비콘 추가 -->
+    <link rel="icon" href="images/apple-touch-icon" type="image/png">
 </head>
 <body>
     <div class="calculator">
@@ -18,6 +20,7 @@
         </select>
 
         <button onclick="calculate()">계산하기</button>
+        <button onclick="copyToClipboard()">결과 복사하기</button>
         <div id="result">결과: </div>
     </div>
 
