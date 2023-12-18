@@ -3,7 +3,6 @@ function formatCurrency(amount) {
 }
 
 function calculate() {
-    // ... 이하 생략
 }
 
 function calculate() {
@@ -24,8 +23,6 @@ function calculate() {
     var multipliedResult = baseValue * amount;
     var dividedResult = multipliedResult / 2;
 
-    // 결과를 따로 표시하는 div에 값 설정
     document.getElementById('received').innerText = '받아하는 돈: ' + formatCurrency(multipliedResult);
     document.getElementById('shared').innerText = '공동계좌에 넣을 돈: ' + formatCurrency(dividedResult);
 }
-    
