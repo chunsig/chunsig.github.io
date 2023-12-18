@@ -3,6 +3,10 @@ function formatCurrency(amount) {
 }
 
 function calculate() {
+    // ... 이하 생략
+}
+
+function calculate() {
     var amount = parseFloat(document.getElementById('amount').value);
     var ticketType = document.getElementById('ticketType').value;
 
@@ -18,10 +22,10 @@ function calculate() {
     }
 
     var multipliedResult = baseValue * amount;
-    var resultString = '받아하는 돈: ' + formatCurrency(multipliedResult);
-
     var dividedResult = multipliedResult / 2;
-    resultString += ', 공동계좌에 넣을 돈: ' + formatCurrency(dividedResult);
 
-    document.getElementById('result').innerText = '결과: ' + resultString;
+    // 결과를 따로 표시하는 div에 값 설정
+    document.getElementById('received').innerText = '받아하는 돈: ' + formatCurrency(multipliedResult);
+    document.getElementById('shared').innerText = '공동계좌에 넣을 돈: ' + formatCurrency(dividedResult);
 }
+    
