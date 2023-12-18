@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>하리보뱅크 계산기</title>
+    <title>복권 및 입장권 계산기</title>
     <link rel="stylesheet" href="styles.css">
     <!-- 파비콘 추가 -->
-    <link rel="icon" href="b526d1867f106e24.ico" type="image/x-icon">
+    <link rel="icon" href="icon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="calculator">
-        <label for="amount">개수:</label> <!-- 수정된 부분: "금액" -> "개수" -->
-        <input type="number" id="amount" placeholder="개수를 입력하세요"> <!-- 수정된 부분: "금액" -> "개수" -->
+        <label for="amount">개수:</label>
+        <input type="number" id="amount" placeholder="개수를 입력하세요">
 
         <label for="ticketType">항목 선택:</label>
         <select id="ticketType">
@@ -20,7 +20,10 @@
         </select>
 
         <button onclick="calculate()">계산하기</button>
-        <div id="result">결과: </div>
+        
+        <!-- 결과를 따로 표시하는 div 추가 -->
+        <div id="received">받아하는 돈: </div>
+        <div id="shared">공동계좌에 넣을 돈: </div>
     </div>
 
     <script src="script.js"></script>
