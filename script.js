@@ -3,15 +3,17 @@ function formatCurrency(amount) {
 }
 
 function calculate() {
-}
-
-function calculate() {
     var amount = parseFloat(document.getElementById('amount').value);
     var ticketType = document.getElementById('ticketType').value;
 
     var baseValue;
+    var maxLotteryCount = 50;
 
     if (ticketType === 'lottery') {
+        if (amount <= 0 || amount > maxLotteryCount) {
+            alert('로또 개수는 1개부터 ' + maxLotteryCount + '개까지 가능합니다.');
+            return;
+        }
         baseValue = 1500000;
     } else if (ticketType === 'ticket') {
         baseValue = 3000000;
