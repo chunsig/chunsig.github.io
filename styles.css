@@ -23,9 +23,9 @@ label, input, select, button {
 
 /* 아이콘 스타일링 */
 button {
-    background: url('faviconn.ico') no-repeat center center;
-    background-size: 32px;
-    padding-left: 32px;
+    background: url('icon.ico') no-repeat center center;
+    background-size: 20px;
+    padding-left: 30px;
 }
 
 /* 아이콘이 눌렸을 때의 스타일링 */
